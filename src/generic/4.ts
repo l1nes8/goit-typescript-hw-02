@@ -10,7 +10,7 @@ class Component<T extends ComponentInterface> {
   constructor(public props: T) {}
 }
 
-class Page extends Component<{ title: string }> {
+class Page extends Component<ComponentInterface> {
   pageInfo() {
     console.log(this.props.title);
   }
